@@ -6,6 +6,9 @@ Spree::Core::Engine.routes.draw do
       resources :users do
         collection do
           get :addresses
+          post :add_address
+          post :update_address
+          delete :delete_address
         end
       end
     end
